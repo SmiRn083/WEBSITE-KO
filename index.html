@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motivational Surprise</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- Love Section -->
+    <div class="love-box" id="welcomeSection">
+      <img src="pic/image.gif" alt="cute bears" class="love-img" />
+      <h2>Do you love me?</h2>
+      <div class="btn-group">
+        <button id="yesBtn" onclick="showNameInput()">Yes</button>
+        <button id="noBtn">No</button>
+      </div>
+    </div>
+
+    <!-- Name Input Section -->
+    <div class="login-box" id="nameInputSection" style="display: none;">
+      <h2>Enter Your Name</h2>
+      <input type="text" id="userName" placeholder="Your name here...">
+      <button onclick="submitName()">Submit</button>
+    </div>
+
+    <!-- Read Message Section -->
+    <div id="buttonSection" style="display: none;">
+      <h2>READ MESSAGE</h2>
+      <button onclick="openMessage()">Open</button>
+    </div>
+
+    <!-- Motivational Message Section -->
+    <div id="cardContainer" style="display: none;">
+      <div class="envelope">
+        <div class="card-wrapper">
+          <div class="card">
+            <div class="card-cover">
+              <div class="card-side card-side-primary">
+                <h1 class="card-title">
+                  <span class="card-title-main">BASAHIN MO TO!</span>
+                </h1>
+              </div>
+              <div class="card-body">
+                <p id="greeting">Hello, 💌</p>
+                <p>I just want to take a moment to remind you how capable you truly are...</p>
+                <p>So don't give up on yourself. You are worthy, you are growing, and you're never as alone as you feel. You’ve got this. And if no one else has told you today—I’m proud of you.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="java/script.js"></script>
+</body>
+</html>
